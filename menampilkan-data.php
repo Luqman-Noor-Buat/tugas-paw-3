@@ -13,5 +13,4 @@ while($row = mysqli_fetch_array($hasil))
     echo $row["asal_kota"];
 }
 
-
 ?>
