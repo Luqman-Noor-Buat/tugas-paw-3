@@ -37,7 +37,7 @@ $hasil = mysqli_query($koneksi, $sql);
               <a href="ubah-data.php?id=<?=$row['nim']?>" style="text-decoration: none;">
                 <button type="button" class="btn btn-success">Ubah</button>
               </a>
-              <a href="hapus.php?id=<?=$row['nim']?>" style="text-decoration: none;">
+              <a href="menghapus-data.php?id=<?=$row['nim']?>" style="text-decoration: none;">
                 <button type="button" class="btn btn-danger">Hapus</button>
               </a>
             </th>
