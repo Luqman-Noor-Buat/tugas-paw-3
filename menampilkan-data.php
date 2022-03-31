@@ -34,7 +34,7 @@ $hasil = mysqli_query($koneksi, $sql);
         <?php while($row = mysqli_fetch_array($hasil)) : ?>
           <tr>
             <th scope="row">
-              <a href="ubah-data.php?id=<?=$row['nim']?>" style="text-decoration: none;">
+              <a href="mengubah-data.php?id=<?=$row['nim']?>" style="text-decoration: none;">
                 <button type="button" class="btn btn-success">Ubah</button>
               </a>
               <a href="menghapus-data.php?id=<?=$row['nim']?>" style="text-decoration: none;">
