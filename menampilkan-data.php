@@ -4,7 +4,6 @@ include "koneksi.php";
 
 $sql = "SELECT * FROM tbl_206";
 $hasil = mysqli_query($koneksi, $sql);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,22 +12,38 @@ $hasil = mysqli_query($koneksi, $sql);
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/719f1245a0.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="logo.png" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <title>Mengubah Data</title>
+    <title>Menampilkan Data</title>
   </head>
   <body>
-    <!--<h1>Lagi Belajar Bootstrap!</h1>-->
-    <div class="container">
-      <table class="table table-warning table-bordered border-dark text-center" style="width: 1260px">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Beranda</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="menambahkan-data.php">Tambah</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Tabel-->
+    <div class="container mt-3" id="beranda">
+      <h2>Tabel Data</h2>
+      <p>Tabel data dibawah ini:</p>
+      <table class="table table-striped text-center" style="width: 99%; background-color: white">
         <thead>
           <tr>
-            <th scope="col" width="210px">Aksi</th>
-            <th scope="col" width="210px">NIM</th>
-            <th scope="col" width="210px">Nama</th>
-            <th scope="col" width="210px">Jenis Kelamin</th>
-            <th scope="col" width="210px">Prodi</th>
-            <th scope="col" width="210px">Asal Kota</th>
+            <th scope="col" width="16.5%">Aksi</th>
+            <th scope="col" width="16.5%">NIM</th>
+            <th scope="col" width="16.5%">Nama</th>
+            <th scope="col" width="16.5%">Jenis Kelamin</th>
+            <th scope="col" width="16.5%">Prodi</th>
+            <th scope="col" width="16.5%">Asal Kota</th>
           </tr>
         </thead>
         <tbody>
@@ -52,6 +67,13 @@ $hasil = mysqli_query($koneksi, $sql);
         </tbody>
       </table>
     </div>
+    <!--Bagian Bawah-->
+    <footer class="bg-primary text-center text-lg-start fixed-bottom">
+      <div class="text-center p-3 text-white" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright By
+        <a class="text-white" href="https://github.com/Luqman-Noor-Buat">Luqman Noor Buat</a>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
