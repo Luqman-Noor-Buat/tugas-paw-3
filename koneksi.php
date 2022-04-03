@@ -2,7 +2,7 @@
 
 $koneksi = mysqli_connect("localhost", "root", "", "luqman");
 if (!$koneksi){
-    echo "Koneksi ke database kampus GAGAL";
+    echo "Koneksi ke database luqman GAGAL";
 }
 
 ?>

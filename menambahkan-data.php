@@ -22,7 +22,7 @@ if(!$hasil){
 }else{
     echo "
     <script>
-      alert('Anda telah berhasil menginputkan data ke tabel mahasiswa');
+      alert('Anda telah berhasil menginputkan data ke tbl_206');
       document.location.href='menampilkan-data.php';   
     </script>";}
 }

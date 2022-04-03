@@ -14,7 +14,7 @@ if(!$hasil){
 }else{
     echo "
     <script>
-      alert('Anda telah berhasil menghapus data ke tabel mahasiswa');
+      alert('Anda telah berhasil menghapus data dari tbl_206');
       document.location.href='menampilkan-data.php';   
     </script>";
 }

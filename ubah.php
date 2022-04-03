@@ -23,7 +23,7 @@ if(!$hasil){
 }else{
     echo "
     <script>
-      alert('Anda telah berhasil mengubah data');
+      alert('Anda telah berhasil mengubah data dari tbl_206');
       document.location.href='menampilkan-data.php';   
     </script>";
 }
