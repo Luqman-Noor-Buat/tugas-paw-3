@@ -48,7 +48,7 @@ if (!$hasil){
         <?php while($row = mysqli_fetch_array($hasil)) : ?>
         <form method="post" action="ubah.php">
           <div class="form-floating mb-3 mt-3">
-            <input type="text" class="form-control input-color" id="nim" placeholder="Masukkan NIM" name="nim" value="<?php echo $row['nim'] ?>" disabled required>
+            <input type="text" class="form-control input-color" id="nim" placeholder="Masukkan NIM" name="nim" value="<?php echo $row['nim'] ?>" required>
             <label for="nim">NIM</label>
           </div>
           <div class="form-floating mb-3 mt-3">
